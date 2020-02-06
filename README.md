@@ -4,7 +4,7 @@ This repository is for working with different algortihms.
 |Sl No|Description|Repository|Language|
 |---|---|---|---|
 |1.|Bubble Sort|[bubble sort](https://github.com/takg/algorithms/tree/master/sorting/bubble_sort.h)|C++|
-|2.|Selection Sort|[selection sort](https://github.com/takg/algorithms/tree/master/sorting/selection_sort.h|C++|
+|2.|Selection Sort|[selection sort](https://github.com/takg/algorithms/tree/master/sorting/selection_sort.h)|C++|
 |3.|Insertion Sort||C++|
 |4.|Merge Sort||C++|
 |5.|Quick Sort||C++|
