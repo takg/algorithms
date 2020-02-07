@@ -1,11 +1,23 @@
 #pragma once
 
-template <typename T>
-void partition(
-        std::vector<T>::const_iterator begin,
-        std::vector<T>::const_iterator end,
-        Predicate p
-        )
+template<class ForwardIt, class UnaryPredicate>
+ForwardIt partition(ForwardIt first, ForwardIt last, UnaryPredicate p)
 {
-    return;
+    while(first != last) {
+        if (!p(*first)) {
+            break;
+        }
+        ++first;
+    }
+
+    if (first != last) {
+        for (ForwardIt it = std::next(first); it != last; ++it) {
+            if (p(*it)) {
+                std::iter_swap(it, first);
+                ++first;
+            }
+        }
+    }
+
+    return first;
 }
