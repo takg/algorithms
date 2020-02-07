@@ -4,9 +4,7 @@
 #include <iterator>
 
 template <typename T>
-int selection_sort(std::vector<T>& arr) {
-    int swaps = 0;
-
+void selection_sort(std::vector<T>& arr) {
     for (size_t n = 0; n < arr.size()-1 ; ++n) { // N-1
         size_t index = 0;
         T temp = arr[index];
@@ -21,9 +19,8 @@ int selection_sort(std::vector<T>& arr) {
 
         if (temp > arr[arr.size()-n-1]) {
             std::swap(arr[index], arr[arr.size()-n-1]);
-            ++swaps;
         }
     } // end of for
 
-    return swaps;
+    return;
 }
